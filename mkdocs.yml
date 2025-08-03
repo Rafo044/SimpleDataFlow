@@ -1,1 +1,10 @@
-site_name: My Docs
+site_name: simply_ETL Documentation
+
+nav:
+  - Home: index.md
+  - Pipeline: pipeline.md
+
+theme:
+  name: material  # və ya başqa tema
+
+# başqa konfiqurasiya parametrləri
