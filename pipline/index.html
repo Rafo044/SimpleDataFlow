@@ -7,11 +7,11 @@
         
         
         
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <title>My Docs</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>simply_ETL Pipeline Steps - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
@@ -20,7 +20,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="/.">My Docs</a>
+                <a class="navbar-brand" href="..">My Docs</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -31,10 +31,10 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="/." class="nav-link">simply_ETL Project Overview</a>
+                                <a href=".." class="nav-link">simply_ETL Project Overview</a>
                             </li>
-                            <li class="navitem">
-                                <a href="/pipline/" class="nav-link">simply_ETL Pipeline Steps</a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">simply_ETL Pipeline Steps</a>
                             </li>
                         </ul>
 
@@ -44,6 +44,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -51,15 +61,67 @@
 
         <div class="container">
             <div class="row">
-
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
 
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#simply_etl-pipeline-steps" class="nav-link">simply_ETL Pipeline Steps</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#1-extract-step" class="nav-link">1. Extract step</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2-transform-step" class="nav-link">2. Transform step</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3-load-step" class="nav-link">3. Load step</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#4-logging" class="nav-link">4. Logging</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
+<h1 id="simply_etl-pipeline-steps">simply_ETL Pipeline Steps</h1>
+<p>This is simple description of ETL pipeline for this project.</p>
+<h2 id="1-extract-step">1. Extract step</h2>
+<ul>
+<li>Scan current folder for CSV, JSON and XML files  </li>
+<li>Read data from each file type using different functions  </li>
+<li>Combine all data to one big DataFrame  </li>
+</ul>
+<h2 id="2-transform-step">2. Transform step</h2>
+<ul>
+<li>Convert height from inches to meters (1 inch = 0.0254 meters)  </li>
+<li>Convert weight from pounds to kilograms (1 pound = 0.45359237 kg)  </li>
+<li>Round values to 2 decimal points  </li>
+</ul>
+<h2 id="3-load-step">3. Load step</h2>
+<ul>
+<li>Save the transformed DataFrame to CSV file called <code>transformed_data.csv</code>  </li>
+</ul>
+<h2 id="4-logging">4. Logging</h2>
+<ul>
+<li>Each phase (extract, transform, load) is logged with timestamp to <code>log_file.txt</code>  </li>
+<li>Helps to track progress and debugging  </li>
+</ul>
+<hr />
+<p>You can run the ETL by executing <code>etl.py</code> script in terminal.</p></div>
             </div>
         </div>
 
@@ -67,14 +129,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="/js/jquery-3.6.0.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <script>
-            var base_url = "/",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/js/base.js"></script>
-        <script src="/search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
