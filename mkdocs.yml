@@ -1,10 +1,25 @@
-site_name: simply_ETL Documentation
+
+site_name: Easy_ETL Documentation
 
 nav:
   - Home: index.md
   - Pipeline: pipeline.md
 
 theme:
-  name: material  # və ya başqa tema
+  name: material
+  palette:
+    primary: 'indigo'
+    accent: 'pink'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  logo: 'image/etl_prosses_schema.png'
+  favicon: 'image/etl_prosses_schema.png'
 
-# başqa konfiqurasiya parametrləri
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - footnotes
+  - codehilite
+
