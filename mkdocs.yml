@@ -1,40 +1,4 @@
-
-
-site_name: Azerbaijan AgriData Analysis
-site_description: >
-  Production, trends, inflation impact and statistical tests on agricultural products in Azerbaijan.
-site_author: Rafo
-repo_url: https://github.com/Rafo044/analysis_of_production_data
-theme:
-  name: material
-  features:
-    - navigation.tabs
-    - navigation.indexes
-    - toc.integrate
-  palette:
-    scheme: default
-    primary: green
-    accent: light green
-
+site_name: Simply ETL
 nav:
-  - Ana Səhifə: index.md
-  - Vizual Qrafiklər:
-      - Pomidorlar: visualizations/tomatoes.md
-      - Kartof: visualizations/potatoes.md
-      - Süd Məhsulları: visualizations/milk.md
-  - Statistika:
-      - Trend Analizi: analysis/trend.md
-      - T-Test: analysis/ttest.md
-      - İnflyasiya Təsiri: analysis/inflation.md
-  - Məlumat bazası (SQLite): database.md
-  - Layihə Haqqında: about.md
-  - Data Qaynaqları: sources.md
-
-markdown_extensions:
-  - toc:
-      permalink: true
-  - codehilite
-  - admonition
-  - tables
-  - footnotes
+  - Home: index.md
 
