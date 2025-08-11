@@ -11,16 +11,19 @@
       
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../image/etl_prosses_schema.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
     
     
       
-        <title>simply_ETL Pipeline Steps - simply_ETL Documentation</title>
+        <title>simply_ETL Pipeline Steps - Easy_ETL Documentation</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.9f615399.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.649f08f9.min.css">
       
       
 
@@ -49,11 +52,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="pink">
   
     
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -77,10 +83,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="simply_ETL Documentation" class="md-header__button md-logo" aria-label="simply_ETL Documentation" data-md-component="logo">
+    <a href=".." title="Easy_ETL Documentation" class="md-header__button md-logo" aria-label="Easy_ETL Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../image/etl_prosses_schema.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -91,7 +96,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            simply_ETL Documentation
+            Easy_ETL Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -103,6 +108,8 @@
         </div>
       </div>
     </div>
+    
+      
     
     
     
@@ -169,13 +176,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="simply_ETL Documentation" class="md-nav__button md-logo" aria-label="simply_ETL Documentation" data-md-component="logo">
+    <a href=".." title="Easy_ETL Documentation" class="md-nav__button md-logo" aria-label="Easy_ETL Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../image/etl_prosses_schema.png" alt="logo">
 
     </a>
-    simply_ETL Documentation
+    Easy_ETL Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -287,25 +293,25 @@
                   
 
 
-<h1 id="simply_etl-pipeline-steps">simply_ETL Pipeline Steps</h1>
+<h1 id="simply_etl-pipeline-steps">simply_ETL Pipeline Steps<a class="headerlink" href="#simply_etl-pipeline-steps" title="Permanent link">&para;</a></h1>
 <p>This is simple description of ETL pipeline for this project.</p>
-<h2 id="1-extract-step">1. Extract step</h2>
+<h2 id="1-extract-step">1. Extract step<a class="headerlink" href="#1-extract-step" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Scan current folder for CSV, JSON and XML files  </li>
 <li>Read data from each file type using different functions  </li>
 <li>Combine all data to one big DataFrame  </li>
 </ul>
-<h2 id="2-transform-step">2. Transform step</h2>
+<h2 id="2-transform-step">2. Transform step<a class="headerlink" href="#2-transform-step" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Convert height from inches to meters (1 inch = 0.0254 meters)  </li>
 <li>Convert weight from pounds to kilograms (1 pound = 0.45359237 kg)  </li>
 <li>Round values to 2 decimal points  </li>
 </ul>
-<h2 id="3-load-step">3. Load step</h2>
+<h2 id="3-load-step">3. Load step<a class="headerlink" href="#3-load-step" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Save the transformed DataFrame to CSV file called <code>transformed_data.csv</code>  </li>
 </ul>
-<h2 id="4-logging">4. Logging</h2>
+<h2 id="4-logging">4. Logging<a class="headerlink" href="#4-logging" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Each phase (extract, transform, load) is logged with timestamp to <code>log_file.txt</code>  </li>
 <li>Helps to track progress and debugging  </li>
