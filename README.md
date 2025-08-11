@@ -3,7 +3,6 @@ In this project, I created a simple ETL data pipeline to work with different typ
 
 ## Data Flow
 ![Data Flow](https://github.com/Rafo044/SimpleDataFlow/blob/main/image/SimpleDataFlow.png)
-<img src="https://github.com/Rafo044/SimpleDataFlow/blob/main/image/SimpleDataFlow.png" alt="Data Flow" width="100%">
 
 
 ## Folder Structure
