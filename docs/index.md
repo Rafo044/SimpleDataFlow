@@ -1,32 +1,31 @@
-# simply_ETL Project Overview
+## Introduction
+In this project, I created a simple ETL data pipeline to work with different types of datasets. The pipeline takes the data, changes it into a clean format, and saves it as CSV files. All steps of the process are written into a log file, so it is easy to follow what happened and fix problems if needed.
 
-This project is simple ETL pipeline for transform data from multiple source files (csv, json, xml) to one csv file.
-
-## What is ETL?
-
-ETL mean Extract, Transform and Load.  
-- Extract: Get data from sources  
-- Transform: Change data to needed form  
-- Load: Save data to target file or database
-
-## Data sources
-
-We use three type files:  
-- CSV (source1.csv, source2.csv, source3.csv)  
-- JSON (source1.json, source2.json, source3.json)  
-- XML (source.xml)
-
-All files contain same data but different formats.
-
-## ETL process schema
-
-Below image shows ETL steps in pipeline:  
-![ETL Process Schema](../image/etl_prosses_schema.png)
-
-- First we extract data from all source files  
-- Then transform heights and weights units  
-- Finally load all data to `transformed_data.csv`
-
----
+## Data Flow
+![Data Flow](https://github.com/Rafo044/SimpleDataFlow/blob/main/image/SimpleDataFlow.png)
 
 
+## Folder Structure
+```markdown
+SimpleDataFlow/
+│
+├── data/                  
+│   ├── raw/               
+│   └── processed/         
+│
+├── logs/                  
+│   └── log_file.txt
+│
+├── docs/ 
+│   ├── pipline.md
+│   └── index.md
+│
+├── src/                     
+│   └── etl.py
+│
+├── requirements.txt       
+├── README.md              
+├── mkdocs.yaml
+└── LICANSE      
+
+```

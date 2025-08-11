@@ -16,6 +16,10 @@ SimpleDataFlow/
 ├── logs/                  
 │   └── log_file.txt
 │
+├── docs/ 
+│   ├── pipline.md
+│   └── index.md
+│
 ├── src/                     
 │   └── etl.py
 │
