@@ -7,26 +7,44 @@ In this project, I created a simple ETL data pipeline to work with different typ
 
 ## Folder Structure
 ```markdown
+
 SimpleDataFlow/
 │
-├── data/                  
-│   ├── raw/               
-│   └── processed/         
+├── data/
+│   ├── json/
+│   │   ├── source1.json
+│   │   ├── source2.json
+│   │   └── source3.json
+│   │
+│   ├── log/
+│   │   └── log_file.txt
+│   │
+│   ├── processed/
+│   │   ├── source1.csv
+│   │   ├── source2.csv
+│   │   └── source3.csv
+│   │
+│   └── xml/
+│       ├── source1.xml
+│       ├── source2.xml
+│       └── source3.xml
 │
-├── logs/                  
-│   └── log_file.txt
-│
-├── docs/ 
-│   ├── pipline.md
+├── docs/
+│   ├── image/
+│   │   └── SimpleDataFlow.png
+│   │
 │   └── index.md
 │
-├── src/                     
+├── src/
 │   └── etl.py
 │
-├── requirements.txt       
-├── README.md              
-├── mkdocs.yaml
-└── LICANSE      
+├── tests/
+│   └── test_etl.py
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+├── mkdocs.yml
+└── requirements.txt
 
-```
 
